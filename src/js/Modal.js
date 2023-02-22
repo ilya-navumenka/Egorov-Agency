@@ -60,8 +60,6 @@ export class Modal {
     };
 
     appendModalElements() {
-       
-        
         this.modal.append(this.modalCloseBtn);
         this.modal.append(this.modalTitle);
         this.modal.append(this.modalText);

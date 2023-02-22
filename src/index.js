@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let formData = new FormData(form)
 
-        if(!error) {
+        if(error === 0) {
             form.classList.add('_sending');
             let response = await fetch(sendmail.php, {
                 method: 'POST',
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             if (response.ok) {
                 let result = await response.json();
-				// generateToolsModal();
+				generateToolsModal();
                 alert(result.message);
                 form.reset();
                 form.classList.remove('_sending');
