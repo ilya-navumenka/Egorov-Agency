@@ -1,0 +1,39 @@
+.promo {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background: $color-background;
+}
+
+.promo__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo__title {
+    margin: 0;
+    padding-top: 9.3rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    opacity: 0.39;
+    text-align: center;
+    @include media-tablet {
+        text-align: center;
+    }
+    @include media-mobile {
+        @include font($size: 3.6rem, $height: 3.7rem, $weight: 700);
+        text-align: center;
+    }
+}
+
+.promo__text {
+    margin: 0;
+    max-width: 42.3rem;
+    text-align: center;
+    padding-top: 0.8rem;
+    @include media-tablet {
+        max-width: 28.6rem;
+        @include font($size: 1.6rem, $height: 2.4rem, $weight: normal);
+    }
+}
