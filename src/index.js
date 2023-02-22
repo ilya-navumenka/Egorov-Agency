@@ -71,10 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				// generateToolsModal();
                 alert(result.message);
                 form.reset();
-                form.classList.add('_sending');
+                form.classList.remove('_sending');
             } else {
                 alert('Ошибка');
-                form.classList.add('_sending');
+                form.classList.remove('_sending');
             }
         } else {
             console.log('Заполни обязательные поля');
