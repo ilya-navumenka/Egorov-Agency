@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             if (response.ok) {
                 let result = await response.json();
-				generateToolsModal();
+				// generateToolsModal();
                 alert(result.message);
                 form.reset();
                 form.classList.remove('_sending');
