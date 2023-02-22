@@ -1,0 +1,21 @@
+html {
+    font-size: 10px;
+    height: 100%
+}
+
+body {
+    @extend %font-add;
+    @include font($size: 1.8rem, $height: 2.7rem, $weight: 400);
+    height: 100%;
+}
+
+h1 {
+    @extend %font-add;
+    @include font($size: 7.2rem, $height: 7.4rem, $weight: 700);
+    @include media-tablet {
+        @include font($size: 3.6rem, $height: 3.7rem, $weight: 700);
+    }
+    @include media-mobile {
+        @include font($size: 3.6rem, $height: 3.7rem, $weight: 700); 
+    }
+}
